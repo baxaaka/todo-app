@@ -52,13 +52,13 @@ const App = () => {
                     val={userName}
                     setVal={setUsername}
                     type={"text"}
-                    pl={"Enter userName"}
+                    pl={"NIMA ISH BAJRMOQCHISIZ"}
                   />
                   <Input
                     val={age}
                     setVal={setAge}
-                    type={"text"}
-                    pl={"Enter age"}
+                    type={"number"}
+                    pl={"NECHCHI DAQIQADAN KEYIN"}
                   />
 
                   <button
@@ -74,7 +74,7 @@ const App = () => {
                 <table className="table table-striped table-hover">
                   <thead>
                     <tr>
-                      <th>ID</th> <th>Name</th> <th>Age</th>
+                      <th>ID</th> <th>Qachon qushildi</th> <th>Qancha vaqtdan keyin</th>
                     </tr>
                   </thead>
                   <tbody>
