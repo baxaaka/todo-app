@@ -20,7 +20,7 @@ const index = () => {
   };
 
   function addUser() {
-    setMessage("vue js develop");
+  
     const newUser = {
       id: uuidv4(),
       name: userName,
