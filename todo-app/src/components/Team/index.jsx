@@ -1,11 +1,15 @@
-import React from 'react';
+
+import React  ,{useRef, useState} from 'react';
 
 const index = () => {
+   
     return (
-        <div>
-            <h1 className="text-center text-primary page"> Team</h1>
-        </div>
-    );
+       
+     <>
+      <h1 className='page'>TEAM</h1>
+     </>   
+            
+    )
 };
 
 export default index;

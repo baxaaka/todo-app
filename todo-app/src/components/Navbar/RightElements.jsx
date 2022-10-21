@@ -3,7 +3,7 @@ import context from '../../context';
 const RightElements = () => {
 
   const menu = useContext(context).info
-console.log(menu);
+
   return (
     <>
       <div className="d-flex align-items-center">
@@ -30,13 +30,13 @@ console.log(menu);
           aria-labelledby="navbarDropdownMenuLink"
         >
           <li>
-            <a className="dropdown-item" href="#">{menu.item1}</a>
+            <a className="dropdown-item" href="#">{menu}</a>
           </li>
           <li>
-            <a className="dropdown-item" href="#">{menu.item2}</a>
+            <a className="dropdown-item" href="#">{menu}</a>
           </li>
           <li>
-            <a className="dropdown-item" href="#">{menu.item3}</a>
+            <a className="dropdown-item" href="#">{menu}</a>
           </li>
         </ul>
       </div>

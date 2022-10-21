@@ -6,5 +6,10 @@ main{
 
 
 .page{
-  height: 600px;
+  min-height: 90vh;
+}
+
+
+.bg-success{
+  background-color: green;
 }

@@ -1,4 +1,4 @@
-import React, { useState,useRef, useContext } from "react";
+import React, { useState,useRef, useContext, useEffect } from "react";
 import "./App.css";
 
 import Navbar from "./components/Navbar";
@@ -16,22 +16,27 @@ import Home from './components/Home'
 
 const App = () => {
 
-  const [message, setMessage] = useState("HEllo react");
-  const [info, setInfo] = useState({
-    item1: "item-1",
-    item2: "item-2",
-    item3: "item-3",
-  });
+  let [user , setUser]=useState([])
 
+  async function getData(){
+    const response = await fetch ('https://jsonplaceholder.typicode.com/todos')
+     const result= await response.json()
+    setUser(result)
+  }
+   useEffect(()=> {
+  
+    getData()
+  },[])
 
-
+   
+  
   return (
     <>
-      <context.Provider value={{message,info}}>
+      <context.Provider value={{user}}>
       
         <main>
           <BrowserRouter>
-          <Navbar info={info} />
+          <Navbar/>
             <Routes>
              <Route path="/" element={ <Home/>} />
              <Route path="/team" element={  <Team/>} />
